@@ -1,0 +1,229 @@
+:root{
+    --blue:#03d8F3;
+    --yellow:#fcee0c;
+    --pink:#ea01d9;
+    --white:#f1f1f1;
+}
+
+*,body{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    background-image: url("/img/Background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 95%;
+    margin:auto;
+    padding:5px 0px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav ul li {
+    list-style: none;
+    font-family: "bebas";
+}
+
+nav ul li img{
+    width: 200px;
+    cursor: pointer;
+}
+
+nav ul li span{
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+nav ul li a{
+    font-size:1rem;
+    color: var(--white);
+    cursor:pointer;
+    transition: .5s;
+}
+
+nav ul li a:hover{
+    color: var(--yellow);
+}
+
+.image{
+    position: absolute;
+    top: 37px;
+    z-index: 100;
+
+}
+
+header{
+    position: absolute;
+    left:400px;
+    top: 100px;
+
+}
+
+.text{
+    margin:auto;
+}
+header .text h1{
+    font-family: 'Cyberway Riders';
+    font-size: 10rem;
+    font-weight: 100;
+    color: var(--yellow);
+    z-index: 100;
+    text-shadow:2px 2px var(--blue);
+    transform:skewX(-20deg);
+}
+
+header .text h2{
+    font-family: "Robot Roc";
+    font-size: 10rem;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--blue);
+    text-align: center;
+    letter-spacing: 30px;
+    line-height: 100px;
+    transform: skew(-20deg);
+    
+}
+
+.watch-trailer{
+    text-align:center;
+    color: var(--white);
+    font-family: 'bebas';
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    top: 100px;
+    left:-100px;
+    cursor: pointer;
+    z-index:100;
+    width: 10%;
+}
+
+.watch-trailer:hover{
+    text-align:center;
+}
+
+.part-1{
+    padding:10px 60px 10px 20px;
+    background-color:var(--yellow);
+    transform: skewX(-10deg);
+    color: black;
+    z-index: 5;
+    position: absolute;
+    left:340px;
+    transition:.5s ease-in-out;
+}
+
+
+.part-2{
+    width:200px;
+    height:60px;
+    transform:skewX(-10deg);
+    border:1px solid var(--blue);
+    line-height: 60px;
+    position: absolute;
+    left:400px;
+    text-align: right;
+    padding-right:30px;
+    transition:.5s ease-in-out;
+}
+
+
+
+.partikel:nth-child(1){
+    position: absolute;
+    top: 22%;
+    left: 13%;
+}
+
+.partikel:nth-child(2){
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.partikel:nth-child(3){
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    
+}
+
+.partikel .blue{
+    width: 150px;
+    height: 8px;
+    background-color: var(--blue);
+}
+
+.partikel .pink{
+    width: 100px;
+    height: 5px;
+    background-color: var(--pink);
+}
+
+footer{
+    width: 95%;
+    min-height:10vh ;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    font-family: 'bebas';
+    position: relative;
+    top:80vh;
+    z-index:100;
+    
+}
+
+footer ul li{
+    list-style-type: none;
+    text-align: center;
+}
+
+.console{
+    display: flex;
+    align-items:inherit;
+}
+.console li{
+    margin:0px 5px;
+}
+.scroll{
+    margin-right:180px;
+    cursor: pointer;
+}
+footer ul li p{
+    font-size: 1rem;
+    color: var(--white);
+    transition: .5s;
+}
+footer ul li p:hover{
+    color: var(--yellow);
+}
+
+footer ul li span{
+    font-size:2rem;
+    color: var(--pink);
+    transition: .5s;
+    position: relative;
+}
+
+
+#download{
+    padding:10px 20px;
+    background-color: var(--blue);
+    color: black;
+    transform: skewX(-10deg);
+    cursor: pointer;
+    position: relative;
+    transition: .5s;
+    box-shadow: 5px 5px var(--pink);
+}
